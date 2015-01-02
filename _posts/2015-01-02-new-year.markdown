@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "New Year!"
+date:   2015-01-02 14:34:25
+categories: misc
+tags: featured
+image: /assets/article_images/standard/desktop.jpg
+---
+Happy 2015! First task on my 2015 list is to get a blog with [jekyll](http://jekyllrb.com). 
+
+
+[jekyll]:      http://jekyllrb.com
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-help]: https://github.com/jekyll/jekyll-help
