@@ -60,6 +60,7 @@
                 </a>
               {% endif %}
             {% endfor %}
+            {% include comments.html %}
           </section>
         </footer>
         <div class="bottom-teaser cf">
@@ -71,6 +72,7 @@
               <p class="bio">{{author.bio}}</p>
               <hr>
               <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
+            
             </section>
           </div>
           {{/post}}
