@@ -3,7 +3,6 @@ layout: post
 title:  "New Year!"
 date:   2015-01-02 14:34:25
 categories: misc
-tags: featured
 image: /assets/images/background_image.jpg
 ---
 Happy 2015! First task on my 2015 list is to get a blog with [jekyll](http://jekyllrb.com). 

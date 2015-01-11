@@ -6,6 +6,7 @@ categories: []
 tags:
 - Rails Girls
 - Summer of Code
+- featured
 image: /assets/images/background_image.jpg
 
 ---
