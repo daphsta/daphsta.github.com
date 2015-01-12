@@ -19,7 +19,7 @@ a problem that you have solved, or just general experience to compose a talk out
 in [Trello](http://www.trello.com) at the end of the day is a start. You can then narrow down on what might interest you (and your potential audience) to warrant
 further research. Of course, it will be more adventurous to give a talk on a subject you don't really know about but would like to understand it in more. For starters, it would be best to talk about something you are working on or have worked with and perhaps it could benefit part of the audience.
 
-##### But my topic is too trivial and everyone knows about it
+##### But my topic is too trivial and everyone knows about the subject matter
 
 If you think that your topic might be suited for entry level, try talking during a Beginner/Newbie/RailsGirls night at the meetup. Understand that beginner nights are meant for speakers who are beginners as well. It doesn't matter if you think that everyone might have a great deal of understanding on what you will talk about because there will always be a handful of people who would find your topic very informational. 
 
@@ -27,11 +27,16 @@ You will be surprised to find that there are a lot of people who really apprecia
 
 ##### What if I can't answer every question by the audience
 
+Ask for help. You're not going to be punished for not knowing an answer to a question. In fact, you will remember the answer for life and that is very valuable. Of course you should always try your best to present your opinion but you could get feedback on that as well. After all, we meet up to learn from each other and not judge on intelligence level.
+
 ##### You don't need x amount of years of experience to be able to give talks
+
+You can always talk about your experience as well and by articulating your learning experience, you will be able to fine tune your learning strategy as well as inspire others.
+Lightning talk is a great way to talk about something relatively small but technical. A topic as small as *how to use form_for* is great for a 5 minute talk. 
 
 ##### I get too nervous doing public speaking
 
-##### Live coding
+The proverbial phrase *practice makes perfect* holds very true in gaining confidence when speaking. I have found that, people who nod in agreement of what you have to say, gives a boost of confidence which calms the nerves. Try looking for that one person in that audience who nods and try to focus your attention at that person. Or, if 
 
 
 
