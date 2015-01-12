@@ -38,6 +38,8 @@ Lightning talk is a great way to talk about something relatively small but techn
 
 The proverbial phrase, *practice makes perfect* holds very true in gaining confidence when speaking. I have found that, people who nod in agreement of what you have to say, gives a boost of confidence which calms the nerves. Try looking for that one person in that audience who nods and try to focus your attention at that person. If you are absolutely anal about everything going as planned, gather some friends to be in the audience and stress that it is imperative that they nod when you are speaking. 
 
+
+
 As you can deduce from all the aforementioned points, it is mostly about a change in perception that would allay any fears in giving talks. Many a time, our fears inhibit us from doing anything. Once all these fears are alleviated, we are able to conquer anything that seemed challenging in the beginning. I hope that this would inspire you to have a crack at giving a talk at your local meetup group. 
 
 
