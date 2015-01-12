@@ -21,6 +21,10 @@ further research. Of course, it will be more adventurous to give a talk on a sub
 
 ##### But my topic is too trivial and everyone knows about it
 
+If you think that your topic might be suited for entry level, try talking during a Beginner/Newbie/RailsGirls night at the meetup. Understand that beginner nights are meant for speakers who are beginners as well. It doesn't matter if you think that everyone might have a great deal of understanding on what you will talk about because there will always be a handful of people who would find your topic very informational. 
+
+You will be surprised to find that there are a lot of people who really appreciate entry level talks rather than something that they might not have heard before. Just keep in mind that it is always refreshing to have at least one entry level talk among the heavy weight topics. As a community who encourages and nutures beginners, we should show more empathy towards the audience.
+
 ##### What if I can't answer every question by the audience
 
 ##### You don't need x amount of years of experience to be able to give talks
