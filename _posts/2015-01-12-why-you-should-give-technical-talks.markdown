@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Why you should give technical talks"
+date:   2015-01-12 14:34:25
+categories: [ruby learn self-development]
+image: /assets/images/background_image.jpg
+---
 A Newbie month at my local Ruby meetup had spurred me to give a talk for the first time. It was definitely nerve wrecking considering
 I've only been coding in Ruby for a little over a year now. After submitting the topic of my [talk](https://github.com/BrisRuby/meetups/tree/master/2014-11-24),
 there was no turning back and I have to give my best shot.
