@@ -64,6 +64,6 @@ Write a program that converts a number to a string, the contents of which depend
       end
     end
   end
-    
+```
 Yes, I do realise there is a Prime class that I could use, but I didn't want to.
 If you haven't checkout [Exercism](http://www.exercism.io) already, you're still not too late to the party.
