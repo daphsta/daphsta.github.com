@@ -25,8 +25,15 @@ To calculate the sum of squares, I initially chose to use the `each_with_object`
 
 ```ruby
   def sum_of_squares
-    (1..num).each_with_object([]) { |n,sq| sq << n*n }.inject(0,:+) { n }
+    (1..num).each_with_object([]) { |n,sq| sq << n*n }.inject(0,:+)
   end
 ```
-The first iteration goes through the given block, `(1..num)` and returns an array, which is the object given to `each_with_object([])`. You can pass in a hash object, `each_with_object({})` to return a hash result.
-In the block, 
+#####each_with_object(obj) { |(*args), memo_obj| ... } definition
+> Iterates the given block for each element with an arbitrary object given, and returns the initially given object.
+    
+    
+The first iteration goes through the given block, `(1..num)` and returns an array, which is the object given to `each_with_object([])`. You can pass in an empty hash object, `each_with_object({})` to return a hash result.
+In the block, `sq` becomes the memo value that will accumulate an array of squares by iterating through every element, `n`.
+And because an array is returned, I could method chain the result with an inject method to sum every element in the array.
+
+
