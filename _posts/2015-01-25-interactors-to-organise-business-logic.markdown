@@ -46,7 +46,7 @@ As an *Interactor* is run, you may add information to the context.
 ```ruby
   context.sales_rep_id = result.id
 ```
-The sales_rep_id can be accessed by the controller that runs the *Interactor*.
+The *sales_rep_id* can be accessed by the controller that runs the *Interactor*.
 ```ruby
   result = FindSalesRep.call(params)
   puts "Sales rep id #{result.sales_rep_id}"
