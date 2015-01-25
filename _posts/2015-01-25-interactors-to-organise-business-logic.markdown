@@ -8,20 +8,20 @@ tags:
 - ruby
 - pattern
 image: /assets/images/background_image.jpg
-published: false
+published: true
 comments: true
 ---
 
-== What is an Interactor
+####What is an Interactor
 My team has started using the [Interactor](https://github.com/collectiveidea/interactor) gem to encapsulate complex business logic hence, freeing the controllers. The Interactor gem presents us with a very nice way of representing one thing that the application does and allowing us to adhere to the Single Responsibility Principle. Also, if there is a series of action that are required by the business logic, we are able to organise a sequence of interactors using the *Organizer* method.
 
 I believe that it would be easier to demonstrate the functionalties of the *Interactor* gem through code, of course. 
-For a working app, click on this *github repo*. The app is built using the *rails-api* gem which is a lightweight rails app minus all the unnecessary view modules.
+For a working app, pull from this [github repo](https://github.com/daphsta/interactor_example_app) to view the working code. The app is built using the [rails-api](https://github.com/rails-api/rails-api) gem which is a lightweight rails app minus all the unnecessary view modules.
 
 In this app, I would want to create a *customer* record and associate it to my *user_id* which is my sales_rep id.
 I would create an interactor that would *FindSalesRep* and the user_id would be extracted from the params in the JSON document. 
 
-== Constructing an Interactor
+####Constructing an Interactor
 A `context` contains everything that an *Interactor* needs to work with. The params from the controller sets the `context` when an *Interactor* is called. 
 Creating an interactor is easy. Just create a class that includes *Interactor* and define an instance method `call`, whereby the `context` can be accessed within it. 
 
@@ -39,7 +39,7 @@ class FindSalesRep
   end
 end
 ```
-== Working with a Context
+####Working with a Context
 
 As an *Interactor* is run, you may add information to the context.
 
@@ -61,13 +61,13 @@ To set a failing `context` when an operation has failed, a `context.fail!` can b
   end
 ```
 
-== Organizing multiple Interactors
+####Organizing multiple Interactors
 
 I find the organizer function, which is a variation of the basic *Interactor*, very helpful in explicitly defining the multiple responsibilities require by the controller when processing an action. The organizer is designed to run multiple *Interactors* in one *Interactor* and contents in the `context` is passed to every *Interactor* that the organizer organizes. Each *Interactor* may change the `context` by adding on more information into it to be passed on to the next *Interactor*. If one *Interactor* fails its `context`, the organizer would not call the subsequent *Interactors*.
 
 The code will provide more clarity on this concept.
 
-*client_controller.rb*
+**client_controller.rb**
 ```ruby
 class ClientsController < ApplicationController
 
@@ -82,7 +82,7 @@ class ClientsController < ApplicationController
 end
 ```
 
-*associate_sales_rep_to_client.rb*
+**associate_sales_rep_to_client.rb**
 ```ruby
 class AssociateSalesRepToClient
   include Interactor::Organizer
@@ -92,7 +92,7 @@ class AssociateSalesRepToClient
 end
 ```
 
-*find_sales_rep.rb*
+**find_sales_rep.rb**
 ```ruby
 class FindSalesRep
   include Interactor
@@ -108,7 +108,7 @@ class FindSalesRep
 end
 ```
 
-*create_client.rb*
+**create_client.rb**
 ```ruby
 class CreateClient
   include Interactor
@@ -123,4 +123,11 @@ class CreateClient
   end
 end
 ```
-In the example above, the organizer `AssociateSalesRepToClient` defines the process of creating a Client. The task of creating a Client record requires a sales rep id the be retrieved and saved in a Client record. This example may be contrived, but it would be sufficient demonstrate the concept of organizers.
+In the example above, the organizer `AssociateSalesRepToClient` defines the process of creating a Client. The task of creating a Client record requires a sales rep id to be retrieved and saved in a Client record. This example may be contrived, but it would be sufficient to demonstrate the concept of organizers.
+
+The create will run `AssociateSalesRepToClient` *Interactor* whereby `user_id` is a key in the params. The `FindSalesRep` *Interactor* will run and that would set `sales_rep_id` into the context to be passed onto `CreateClient` *Interactor*. The Client would then be created and save if all runs well. If `FindSalesRep` runs into an error(user id not found), `CreateClient` *Interactor* will not be run and the context will be failed.
+The controller will receive a false `context.success?` which would proceed to render the error message.
+
+####Conclusion
+
+*Interactors* are a nice way to reuse operations and explicitly specifying a sequence of actions in order to execute business logic. It also provides a way to bubble back errors when they occur in any of the operation. If in any case the error needs to rollback an operation, a rollback method can be specified in the *Interactor*. This serves as an option (compared to service objects and use cases) to trim down the controllers by moving business logic out of it.
