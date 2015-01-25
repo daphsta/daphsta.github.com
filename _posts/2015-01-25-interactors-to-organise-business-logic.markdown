@@ -68,6 +68,7 @@ I find the organizer function, which is a variation of the basic *Interactor*, v
 The code will provide more clarity on this concept.
 
 **client_controller.rb**
+
 ```ruby
 class ClientsController < ApplicationController
 
@@ -83,6 +84,7 @@ end
 ```
 
 **associate_sales_rep_to_client.rb**
+
 ```ruby
 class AssociateSalesRepToClient
   include Interactor::Organizer
@@ -93,6 +95,7 @@ end
 ```
 
 **find_sales_rep.rb**
+
 ```ruby
 class FindSalesRep
   include Interactor
@@ -109,6 +112,7 @@ end
 ```
 
 **create_client.rb**
+
 ```ruby
 class CreateClient
   include Interactor
