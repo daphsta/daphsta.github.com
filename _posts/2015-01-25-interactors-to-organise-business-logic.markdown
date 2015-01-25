@@ -7,7 +7,7 @@ tags:
 - rails
 - ruby
 - pattern
-image: /assets/images/background_image.jpg
+image: /assets/images/silo-ventilation-pipe.jpg
 published: true
 comments: true
 ---
