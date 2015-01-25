@@ -13,7 +13,7 @@ comments: true
 ---
 
 ####What is an Interactor
-My team has started using the [Interactor](https://github.com/collectiveidea/interactor) gem to encapsulate complex business logic hence, freeing the controllers. The Interactor gem presents us with a very nice way of representing one thing that the application does and allowing us to adhere to the Single Responsibility Principle. Also, if there is a series of action that are required by the business logic, we are able to organise a sequence of interactors using the *Organizer* method.
+My team has started using the [Interactor](https://github.com/collectiveidea/interactor) gem to encapsulate complex business logic hence, freeing up the controllers. The Interactor gem presents us with a very nice way of representing one thing that the application does and allowing us to adhere to the Single Responsibility Principle. Also, if there is a series of action that are required by the business logic, we are able to organise a sequence of interactors using the *Organizer* method.
 
 I believe that it would be easier to demonstrate the functionalities of the *Interactor* gem through code, of course.
 For a working app, pull from this [github repo](https://github.com/daphsta/interactor_example_app) to view the working code. The app is built using the [rails-api](https://github.com/rails-api/rails-api) gem which is a lightweight rails app minus all the unnecessary view modules.
