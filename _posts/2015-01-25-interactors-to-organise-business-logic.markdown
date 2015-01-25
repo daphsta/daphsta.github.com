@@ -18,7 +18,7 @@ My team has started using the [Interactor](https://github.com/collectiveidea/int
 I believe that it would be easier to demonstrate the functionalities of the *Interactor* gem through code, of course.
 For a working app, pull from this [github repo](https://github.com/daphsta/interactor_example_app) to view the working code. The app is built using the [rails-api](https://github.com/rails-api/rails-api) gem which is a lightweight rails app minus all the unnecessary view modules.
 
-In this app, I would want to create a *customer* record and associate it to my *user_id* which is my sales_rep id.
+In this app, I would want to create a *customer* record and associate it to my *user_id* which is my *sales_rep* id.
 I would create an interactor that would *FindSalesRep* and the user_id would be extracted from the params in the JSON document. 
 
 ####Constructing an Interactor
